@@ -4,9 +4,10 @@ var Schema = mongoose.Schema;
 
 var NewsSchema = new Schema({
 
-  title: {
+  heading: {
     type: String,
-    required: true
+    required: true,
+    index:{unique:true}
   },
 
   link: {
@@ -14,11 +15,11 @@ var NewsSchema = new Schema({
     required: true
   },
 
-  Image: {
+  image: {
       type: String,
       required: false
   },
-  Summary: {
+  summary: {
       type: String,
       required: false
   }
