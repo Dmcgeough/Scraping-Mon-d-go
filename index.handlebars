@@ -1,0 +1,17 @@
+<h1>BBc Headlines</h1>
+
+<h2> Most Recent Articles</h2>
+
+<h3>This will show you the most recent articles scraped from the BBC website.
+    Feel free to browse and comment on the articles that interest you.
+</h3>
+
+<ul>
+    {{#each article}}
+    <li>
+            <p>Heading: {{heading}}</p>
+            <p>Image: {{image}}</p>
+            <p>Summary: {{summary}}</p>
+    </li>
+    {{/each}}
+</ul>
